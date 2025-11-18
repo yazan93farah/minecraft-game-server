@@ -3,5 +3,5 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY . . 
 RUN chmod +x start.sh
-EXPOSE 1234
+EXPOSE 25565
 ENTRYPOINT ["./start.sh"]
