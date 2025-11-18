@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  minecraft:
+    build: .
+    container_name: minecraft-server-container
+    ports:
+      - "8888:1234"
+    volumes:
+      - ./server:/app/server            
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
