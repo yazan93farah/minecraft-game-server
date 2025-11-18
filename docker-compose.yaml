@@ -1,5 +1,5 @@
 services:
-  minecraft:
+  mc-server:
     build: .
     container_name: minecraft-server-container
     ports:

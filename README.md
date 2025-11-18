@@ -4,7 +4,7 @@ A fully containerized Minecraft Java Edition server using Docker and Docker Comp
 
 ## Overview
 - Custom image built from the included `Dockerfile`
-- `docker-compose.yaml` defines the `minecraft` service
+- `docker-compose.yaml` defines the `mc-server` service
 - `start.sh` entrypoint initializes and starts the server
 - `server/` holds generated world data and configuration
 
