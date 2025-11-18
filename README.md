@@ -1,4 +1,4 @@
-# Minecraft Game Server (Dockerized)
+# Minecraft Game Server 
 
 A fully containerized Minecraft Java Edition server using Docker and Docker Compose.
 
@@ -14,36 +14,36 @@ A fully containerized Minecraft Java Edition server using Docker and Docker Comp
 
 ## Quickstart
 Build and run (detached optional):
-    docker compose up --build [-d]
+    `docker compose up --build [-d]`
 
 Connect from Minecraft Java Edition:
 - Multiplayer → Add Server
-- Server Address: localhost:8888
+- Server Address: `localhost:8888`
 
 ## Usage
 Start:
-    docker compose up -d
+    `docker compose up -d`
 
 Stop:
-    docker compose down
+    `docker compose down`
 
 Logs (follow):
-    docker compose logs -f
+    `docker compose logs -f`
 
 ## Configuration
 Server settings:
-    server/server.properties
+    `server/server.properties`
 
 EULA (auto-set to true during image build check start.sh):
-    server/eula.txt
+    `server/eula.txt`
 
 Startup script:
-    start.sh contains the commands to launch the server successfuly.
+    `start.sh` contains the commands to launch the server successfuly.
 
 ## Ports
 Host:Container → 8888:25565
 
 ## Volumes
 Host mount:
-    ./server:/app/server
+    `./server:/app/server`
 
