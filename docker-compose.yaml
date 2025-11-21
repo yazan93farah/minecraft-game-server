@@ -5,7 +5,9 @@ services:
     ports:
       - "8888:25565"
     volumes:
-      - ./server:/app/server            
+      - ./mc-server:/app/server            
     restart: unless-stopped
     stdin_open: true
     tty: true
+volumes:
+  mc-server:   
