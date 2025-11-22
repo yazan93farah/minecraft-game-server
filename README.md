@@ -52,7 +52,6 @@ These variables configure the Minecraft server. They are loaded through Docker C
 
 Edit these in your `.env` file before launching the server.
 
----
 
 ### Server Settings (`server/server.properties`)
 
