@@ -1,0 +1,19 @@
+services:
+  mc-server:
+    build: .
+    container_name: minecraft-server-container
+    environment:
+      MC_HOST_PORT: "${MC_HOST_PORT:-8888}"
+      MC_MOTD: "${MC_MOTD:-Minecraft Default Message from compose}"
+      MC_MAX_PLAYERS: "${MC_MAX_PLAYERS:-20}"
+      MC_CONTAINER_PORT: "${MC_CONTAINER_PORT:-25565}"
+      MC_PLAYER_IDLE_TIMEOUT: "${MC_PLAYER_IDLE_TIMEOUT:-10}"
+    ports:
+      -  "${MC_HOST_PORT:-8888}:${MC_CONTAINER_PORT:-25565}"
+    volumes:
+      - mc-server:/app/server            
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+volumes:
+  mc-server:   
